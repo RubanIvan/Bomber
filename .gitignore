@@ -5,7 +5,6 @@ UnityBomber/Library/metadata/
 UnityBomber/Library/ShaderCache/
 UnityBomber/Temp/
 UnityBomber/obj/
-*.meta
 *Thumbs.db*
 *.stamp
 *.log
