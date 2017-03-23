@@ -1,9 +1,10 @@
+UnityBomber/Library/CurrentLayout.dwlt
 UnityBomber/Library/LastSceneManagerSetup.txt
 /.vs
-UnityBomber/Library/metadata
-UnityBomber/Library/ShaderCache
-UnityBomber/Temp
-UnityBomber/obj
+UnityBomber/Library/metadata/
+UnityBomber/Library/ShaderCache/
+UnityBomber/Temp/
+UnityBomber/obj/
 *.meta
 *Thumbs.db*
 *.stamp
