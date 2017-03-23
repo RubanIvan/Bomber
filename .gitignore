@@ -1,8 +1,7 @@
 UnityBomber/Library/LastSceneManagerSetup.txt
 /.vs
-UnityBomber/Library/metadata/
-UnityBomber/Library/ShaderCache/
-UnityBomber/Library/ScriptAssemblies/
+UnityBomber/Library/metadata
+UnityBomber/Library/ShaderCache
 UnityBomber/Temp
 UnityBomber/obj
 *.meta
