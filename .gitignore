@@ -1,4 +1,3 @@
-UnityBomber/Library/CurrentLayout.dwlt
 UnityBomber/Library/LastSceneManagerSetup.txt
 /.vs
 UnityBomber/Library/metadata/
@@ -10,3 +9,4 @@ UnityBomber/obj
 *Thumbs.db*
 *.stamp
 *.log
+_log.txt
