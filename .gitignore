@@ -1,3 +1,8 @@
 /.vs
 UnityBomber/Library/metadata/
 UnityBomber/Library/ShaderCache/
+UnityBomber/Library/ScriptAssemblies/
+UnityBomber/Temp
+UnityBomber/obj
+*.meta
+*Thumbs.db*
