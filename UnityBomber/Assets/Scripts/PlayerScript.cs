@@ -76,9 +76,7 @@ public class PlayerScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("colllllll");
-
-        //столкновение с землей
+       //столкновение с землей
         if (collision.gameObject.tag == "HouseCub")
         {
             SceneManager.LoadScene(0);
