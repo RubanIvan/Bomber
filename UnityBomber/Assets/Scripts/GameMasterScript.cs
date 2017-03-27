@@ -63,8 +63,7 @@ public class GameMasterScript : MonoBehaviour {
         GameObject.Destroy(HouseRoot);
         HouseRoot = new GameObject("HouseRoot");
 
-
-        for (int i = -15; i < 15; i++)
+        for (int i = -5; i < 5; i++)
         {
             //высота дома
             int houseHeight = Random.Range(GameLevel[CurGameLevel].MinHeight, GameLevel[CurGameLevel].MaxHeight);
