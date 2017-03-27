@@ -14,7 +14,7 @@ public struct GameLevel
 
 }
 
-
+[RequireComponent(typeof(AudioSource))]
 public class GameMasterScript : MonoBehaviour {
 
     
@@ -42,23 +42,11 @@ public class GameMasterScript : MonoBehaviour {
     /// <summary>ссылка на корневой узел домов</summary>
     public GameObject HouseRoot;
 
-   
-
-    
-    
     // Use this for initialization
     void Start () {
-
         GenerateLevel();
-
     }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-
     /// <summary>Генерация уровня в зависимости от CurGameLevel</summary>
     void GenerateLevel()
     {
