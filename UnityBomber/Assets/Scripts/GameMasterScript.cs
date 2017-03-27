@@ -45,6 +45,9 @@ public class GameMasterScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         GenerateLevel();
+
+        
+
     }
 	
     /// <summary>Генерация уровня в зависимости от CurGameLevel</summary>

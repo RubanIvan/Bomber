@@ -9,9 +9,22 @@ public class BombScript : MonoBehaviour
 
     public Score GameMastersScore;
 
+    void Start()
+    {
+        GameMastersScore = GameObject.FindWithTag("GameMaster").GetComponent<Score>();
+    }
+
     //Проверка столкновений
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
+        //столкновение с землей
+        if (collision.gameObject.tag == "Ground")
+        {
+            //удаляем бомбу
+            this.gameObject.SetActive(false);
+        }
+
         //столкновение с домом
         if (collision.gameObject.tag == "HouseCub" )
         {
@@ -67,10 +80,13 @@ public class BombScript : MonoBehaviour
             if(GameMastersScore != null)
                 GameMastersScore.AddScore();
 
+
+            //удаляем бомбу
+            this.gameObject.SetActive(false);
+
+
         }
 
-        //удаляем бомбу
-        Destroy(this.gameObject);
-
+       
     }
 }
