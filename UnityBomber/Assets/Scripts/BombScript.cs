@@ -2,14 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BombaScript : MonoBehaviour
+public class BombScript : MonoBehaviour
 {
     /// <summary>сколько кубиков сносит бомба</summary>
     public int BlastForce;
 
+    public Score GameMastersScore;
+
+    void Start()
+    {
+        GameMastersScore = GameObject.FindWithTag("GameMaster").GetComponent<Score>();
+    }
+
     //Проверка столкновений
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
+        //столкновение с землей
+        if (collision.gameObject.tag == "Ground")
+        {
+            //удаляем бомбу
+            this.gameObject.SetActive(false);
+        }
+
         //столкновение с домом
         if (collision.gameObject.tag == "HouseCub" )
         {
@@ -62,25 +77,16 @@ public class BombaScript : MonoBehaviour
                 o.transform.parent = house;
             }
        
-            
+            if(GameMastersScore != null)
+                GameMastersScore.AddScore();
+
+
+            //удаляем бомбу
+            this.gameObject.SetActive(false);
+
 
         }
 
-        //удаляем бомбу
-        Destroy(this.gameObject);
-
+       
     }
-
-
-
-
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

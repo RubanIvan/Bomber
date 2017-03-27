@@ -23,7 +23,7 @@ public class CloudEmmiter : MonoBehaviour
     /// <summary>
     /// Min border of spawn frequiency
     /// </summary>
-    public int SpawnRangeMin = 10;
+    public int SpawnRangeMin = 1;
 
     /// <summary>
     /// Max border of spawn frequiency
@@ -49,12 +49,12 @@ public class CloudEmmiter : MonoBehaviour
 
             int rndInx = Random.Range(0, Clouds.Count);
 
-            Vector3 pos = Camera.main.ViewportToWorldPoint(new Vector3(0f, 1f, 0f));
+            Vector3 pos = Camera.main.ViewportToWorldPoint(new Vector3(-0.1f, 1f, 0f));
             
             //Sometimes decrease Z to be in front of other objects
             pos.z = ZCoordinate - Random.Range(0,2);
 
-            pos.x = pos.x + XspawnOffset;
+            //pos.x = pos.x + XspawnOffset;
             pos.y = pos.y - Random.Range(TopYBorder, DownYBorder);
 
             if (Clouds[rndInx] != null)
