@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\DieOutsideCamera.cs" />
     <Compile Include="Assets\Scripts\GameMasterScript.cs" />
     <Compile Include="Assets\Scripts\Helpers\CoroutineUtils.cs" />
+    <Compile Include="Assets\Scripts\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\UI\BackToMainMenu.cs" />
     <Compile Include="Assets\Scripts\UI\MuteSwitch.cs" />
