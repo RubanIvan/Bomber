@@ -1,33 +1,35 @@
 Initialize engine version: 5.5.2f1 (3829d7f588f3)
 GfxDevice: creating device client; threaded=1
-d3d11: failed to create D3D11 device (0x887a0004)
-GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 9.0c [atiumdag.dll 8.14.10.647]
-    Renderer: Radeon X1600/X1650 Series 
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: ATI Radeon HD 3800 Series (ID=0x9501)
     Vendor:   ATI
-    VRAM:     1530 MB (via DXGI)
-    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=0 DF16=1 INTZ=0 NULL=0 RESZ=0 SlowINTZ=0 ATOC=0 BC4=1 BC5=1
+    VRAM:     1909 MB
+    Driver:   8.970.100.7000
 Begin MonoManager ReloadAssembly
-Platform assembly: E:\bomber\UnityBomber\bomber_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\bomber\UnityBomber\bomber_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\bomber\UnityBomber\bomber_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\bomber\UnityBomber\bomber_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\bomber\UnityBomber\bomber_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\bomber\UnityBomber\bomber_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: E:\bomber\UnityBomber\bomber_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading E:\bomber\UnityBomber\bomber_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: E:\bomber\UnityBomber\bomber_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading E:\bomber\UnityBomber\bomber_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: G:\myProjects\GameDev\Unity\Bomber\Bomber\UnityBomber\bomber_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading G:\myProjects\GameDev\Unity\Bomber\Bomber\UnityBomber\bomber_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: G:\myProjects\GameDev\Unity\Bomber\Bomber\UnityBomber\bomber_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading G:\myProjects\GameDev\Unity\Bomber\Bomber\UnityBomber\bomber_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: G:\myProjects\GameDev\Unity\Bomber\Bomber\UnityBomber\bomber_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading G:\myProjects\GameDev\Unity\Bomber\Bomber\UnityBomber\bomber_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: G:\myProjects\GameDev\Unity\Bomber\Bomber\UnityBomber\bomber_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading G:\myProjects\GameDev\Unity\Bomber\Bomber\UnityBomber\bomber_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: G:\myProjects\GameDev\Unity\Bomber\Bomber\UnityBomber\bomber_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading G:\myProjects\GameDev\Unity\Bomber\Bomber\UnityBomber\bomber_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 - Completed reload, in  0.030 seconds
-Platform assembly: E:\bomber\UnityBomber\bomber_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: E:\bomber\UnityBomber\bomber_Data\Managed\System.dll (this message is harmless)
-D3D shader create error for pixel shader
-WARNING: Shader Unsupported: 'Hidden/CubeBlur' - Pass '' has no fragment shader
-desktop: 1280x1024 60Hz; virtual: 3200x1080 at -1920,-56
+Platform assembly: G:\myProjects\GameDev\Unity\Bomber\Bomber\UnityBomber\bomber_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: G:\myProjects\GameDev\Unity\Bomber\Bomber\UnityBomber\bomber_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.525743 ms
+UnloadTime: 1.007887 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.082304 ms
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 381.
+Total: 0.405587 ms (FindLiveObjects: 0.020674 ms CreateObjectMapping: 0.014593 ms MarkObjects: 0.125567 ms  DeleteObjects: 0.244142 ms)
+
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 31b8 -> priority: 1 
+  Thread -> id: 11f4 -> priority: 1 
