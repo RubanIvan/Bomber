@@ -1,10 +1,6 @@
 fileFormatVersion: 2
 guid: 99043e22cfb806a42a172a96a18f8cad
-<<<<<<< HEAD
 timeCreated: 1490714053
-=======
-timeCreated: 1490693845
->>>>>>> 4dd4ff2008bb6930fc63f7088ae97feae13f212d
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -25,10 +21,7 @@ TextureImporter:
     21300028: blast_14
     21300030: blast_15
     21300032: blast_16
-<<<<<<< HEAD
     21300034: blast_17
-=======
->>>>>>> 4dd4ff2008bb6930fc63f7088ae97feae13f212d
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -323,7 +316,6 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
-<<<<<<< HEAD
     - serializedVersion: 2
       name: blast_17
       rect:
@@ -337,8 +329,6 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
-=======
->>>>>>> 4dd4ff2008bb6930fc63f7088ae97feae13f212d
     outline: []
   spritePackingTag: 
   userData: 

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,26 +26,3 @@ public class Explosion : MonoBehaviour
         Destroy(this.gameObject);
     }
 }
-=======
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-[RequireComponent(typeof(Animator))]
-public class Explosion : MonoBehaviour
-{
-    private Animator anim;
-	// Use this for initialization
-	void Start ()
-	{
-	    anim = GetComponent<Animator>();
-	    StartCoroutine(playAnimationAndDie());
-	}
-
-    private IEnumerator playAnimationAndDie()
-    {
-        yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length * anim.GetCurrentAnimatorStateInfo(0).speed);
-        Destroy(this.gameObject);
-    }
-}
->>>>>>> 4dd4ff2008bb6930fc63f7088ae97feae13f212d

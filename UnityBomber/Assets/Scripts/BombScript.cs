@@ -22,10 +22,6 @@ public class BombScript : MonoBehaviour
         //столкновение с землей
         if (collision.gameObject.tag == "Ground")
         {
-<<<<<<< HEAD
-=======
-            //удаляем бомбу
->>>>>>> 4dd4ff2008bb6930fc63f7088ae97feae13f212d
             CreateExplosion(this.transform.position);
             this.gameObject.SetActive(false);
         }
@@ -81,10 +77,6 @@ public class BombScript : MonoBehaviour
                 GameObject o = Instantiate(houtetopdestr[Random.Range(0, houtetopdestr.Count - 1)], pos, Quaternion.identity);
                 o.transform.parent = house;
 
-<<<<<<< HEAD
-=======
-                //Draw explosion
->>>>>>> 4dd4ff2008bb6930fc63f7088ae97feae13f212d
                 CreateExplosion(pos);
             }
        
@@ -104,11 +96,7 @@ public class BombScript : MonoBehaviour
         {
             ExpPlace.z = -0.1f;
             ExpPlace.x += 0.16f;
-<<<<<<< HEAD
             Instantiate(ExplosionPrefab, ExpPlace, Quaternion.identity);
-=======
-            var expl = Instantiate(ExplosionPrefab, ExpPlace, Quaternion.identity);
->>>>>>> 4dd4ff2008bb6930fc63f7088ae97feae13f212d
         }
     }
 }
