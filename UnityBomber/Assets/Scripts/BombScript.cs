@@ -96,7 +96,7 @@ public class BombScript : MonoBehaviour
         {
             ExpPlace.z = -0.1f;
             ExpPlace.x += 0.16f;
-            var expl = Instantiate(ExplosionPrefab, ExpPlace, Quaternion.identity);
+            Instantiate(ExplosionPrefab, ExpPlace, Quaternion.identity);
         }
     }
 }
