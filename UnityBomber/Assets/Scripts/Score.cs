@@ -12,7 +12,7 @@ public class Score : MonoBehaviour
 
     void Start()
     {
-        ResetScore();
+        UpdateScoreLabel();
     }
 
     private void UpdateScoreLabel()

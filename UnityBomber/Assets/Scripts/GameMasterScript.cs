@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 
 using UnityEngine;
+using UnityEngine.Networking;
 
 
 public struct GameLevel
@@ -11,6 +12,7 @@ public struct GameLevel
     public int MaxHeight;
     public int MinHeight;
     public Vector2 FinishPos;
+    public Vector3 StartPos;
 
 }
 
@@ -32,6 +34,9 @@ public class GameMasterScript : MonoBehaviour {
 
     /// <summary>префаб игрока</summary>
     public GameObject PlayerPrefab;
+
+    /// <summary>ссылка на игрока</summary>
+    public GameObject PlayerCurrent;
 
     /// <summary>список с параметрами для уровней</summary>
     public List<GameLevel> GameLevel=new List<GameLevel>();
@@ -66,7 +71,8 @@ public class GameMasterScript : MonoBehaviour {
         GameObject.Destroy(HouseRoot);
         HouseRoot = new GameObject("HouseRoot");
 
-        for (int i = -5; i < 5; i++)
+        //генерируем дома
+        for (int i = -15; i < 15; i++)
         {
             //высота дома
             int houseHeight = Random.Range(GameLevel[CurGameLevel].MinHeight, GameLevel[CurGameLevel].MaxHeight);
@@ -87,17 +93,23 @@ public class GameMasterScript : MonoBehaviour {
             //ставим на него любую доступную крышу
             o = Instantiate(HousetopNormal[Random.Range(0, HousetopNormal.Count - 1)], new Vector3(0.32f * i, 0.32f * houseHeight - 3.2f), Quaternion.identity);
             o.transform.parent = h.transform;
-
         }
+
+        //выставляем игрока
+        if (PlayerCurrent !=null) GameObject.Destroy(PlayerCurrent);
+
+        PlayerCurrent = Instantiate(PlayerPrefab, GameLevel[CurGameLevel].StartPos, Quaternion.identity);
 
     }
 
 
     void Awake()
     {
-        GameLevel.Add(new GameLevel() {MaxHeight = 15,MinHeight = 5,FinishPos = new Vector2(-100,100)});
-        GameLevel.Add(new GameLevel() { MaxHeight = 10, MinHeight = 5, FinishPos = new Vector2(-100, 100) });
-        GameLevel.Add(new GameLevel() { MaxHeight = 15, MinHeight = 10, FinishPos = new Vector2(-100, 100) });
+        GameLevel.Add(new GameLevel() {MaxHeight = 15,MinHeight = 5,FinishPos = new Vector2(-100,100), StartPos = new Vector2(0,4)});
+        GameLevel.Add(new GameLevel() { MaxHeight = 10, MinHeight = 5, FinishPos = new Vector2(-100, 100), StartPos = new Vector2(0, 4) });
+        GameLevel.Add(new GameLevel() { MaxHeight = 15, MinHeight = 10, FinishPos = new Vector2(-100, 100), StartPos = new Vector2(0, 4) });
+
+        GameObject.FindWithTag("GameMaster").GetComponent<Score>().ResetScore();
     }
 
 }

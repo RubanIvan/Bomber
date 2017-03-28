@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 99043e22cfb806a42a172a96a18f8cad
-timeCreated: 1490684663
+timeCreated: 1490714053
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -14,15 +14,14 @@ TextureImporter:
     21300014: blast_7
     21300016: blast_8
     21300018: blast_9
-    21300020: blast_10
-    21300022: blast_11
-    21300024: blast_12
-    21300026: blast_13
-    21300028: blast_16
-    21300030: blast_27
-    21300032: blast_14
-    21300034: blast_15
-    21300036: blast_17
+    21300020: blast_13
+    21300022: blast_10
+    21300024: blast_11
+    21300026: blast_12
+    21300028: blast_14
+    21300030: blast_15
+    21300032: blast_16
+    21300034: blast_17
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -105,7 +104,7 @@ TextureImporter:
         width: 40
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -118,7 +117,7 @@ TextureImporter:
         width: 53
         height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -131,7 +130,7 @@ TextureImporter:
         width: 59
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -144,7 +143,7 @@ TextureImporter:
         width: 67
         height: 86
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -157,7 +156,7 @@ TextureImporter:
         width: 76
         height: 89
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -170,7 +169,7 @@ TextureImporter:
         width: 82
         height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -183,7 +182,7 @@ TextureImporter:
         width: 86
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -196,7 +195,7 @@ TextureImporter:
         width: 90
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -209,7 +208,7 @@ TextureImporter:
         width: 94
         height: 94
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -222,46 +221,7 @@ TextureImporter:
         width: 95
         height: 94
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: blast_10
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 114
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: blast_11
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 96
-        width: 95
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: blast_12
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 96
-        width: 93
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -274,33 +234,46 @@ TextureImporter:
         width: 93
         height: 95
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: blast_16
+      name: blast_10
       rect:
         serializedVersion: 2
         x: 5
-        y: 6
-        width: 91
-        height: 88
+        y: 98
+        width: 87
+        height: 89
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: blast_27
+      name: blast_11
       rect:
         serializedVersion: 2
-        x: 2
-        y: 25
-        width: 6
-        height: 5
+        x: 100
+        y: 95
+        width: 91
+        height: 94
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blast_12
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 99
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -308,10 +281,10 @@ TextureImporter:
       name: blast_14
       rect:
         serializedVersion: 2
-        x: 291
-        y: 98
-        width: 91
-        height: 91
+        x: 392
+        y: 100
+        width: 85
+        height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -321,10 +294,23 @@ TextureImporter:
       name: blast_15
       rect:
         serializedVersion: 2
-        x: 388
-        y: 99
-        width: 92
-        height: 91
+        x: 7
+        y: 7
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blast_16
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 11
+        width: 96
+        height: 82
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,9 +320,9 @@ TextureImporter:
       name: blast_17
       rect:
         serializedVersion: 2
-        x: 104
-        y: 7
-        width: 86
+        x: 203
+        y: 9
+        width: 74
         height: 84
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
