@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\BombScript.cs" />
     <Compile Include="Assets\Scripts\CameraScript.cs" />
     <Compile Include="Assets\Scripts\DieOutsideCamera.cs" />
+    <Compile Include="Assets\Scripts\Explosion.cs" />
     <Compile Include="Assets\Scripts\GameMasterScript.cs" />
     <Compile Include="Assets\Scripts\Helpers\CoroutineUtils.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />

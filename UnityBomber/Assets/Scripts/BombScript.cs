@@ -23,6 +23,7 @@ public class BombScript : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             //удаляем бомбу
+            CreateExplosion(this.transform.position);
             this.gameObject.SetActive(false);
         }
 
@@ -78,7 +79,7 @@ public class BombScript : MonoBehaviour
                 o.transform.parent = house;
 
                 //Draw explosion
-                StartCoroutine(Explode(pos));
+                CreateExplosion(pos);
             }
        
             if(GameMastersScore != null)
@@ -91,17 +92,13 @@ public class BombScript : MonoBehaviour
     }
 
 
-    private IEnumerator Explode(Vector3 ExpPlace)
+    private void CreateExplosion(Vector3 ExpPlace)
     {
         if (ExplosionPrefab != null)
         {
             ExpPlace.z = -0.1f;
-
+            ExpPlace.x += 0.16f;
             var expl = Instantiate(ExplosionPrefab, ExpPlace, Quaternion.identity);
-            var explAnim = expl.GetComponent<Animator>();
-            yield return new WaitForSeconds(explAnim.GetCurrentAnimatorStateInfo(0).length);
-            Destroy(expl);
         }
-        yield return 0;
     }
 }

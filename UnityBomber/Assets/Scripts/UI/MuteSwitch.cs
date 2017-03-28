@@ -13,8 +13,6 @@ public class MuteSwitch : MonoBehaviour
     public AudioSource AudioSource;
 
     private Button button;
-    private SpriteState invertState = new SpriteState();
-    private SpriteState originalState = new SpriteState();
     // Use this for initialization
     void Start ()
 	{
