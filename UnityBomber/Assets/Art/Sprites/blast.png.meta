@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 99043e22cfb806a42a172a96a18f8cad
-timeCreated: 1490693845
+timeCreated: 1490714053
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -21,6 +21,7 @@ TextureImporter:
     21300028: blast_14
     21300030: blast_15
     21300032: blast_16
+    21300034: blast_17
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -310,6 +311,19 @@ TextureImporter:
         y: 11
         width: 96
         height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blast_17
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 9
+        width: 74
+        height: 84
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
