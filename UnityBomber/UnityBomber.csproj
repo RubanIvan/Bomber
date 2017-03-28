@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\Copter\DropBlock.cs" />
     <Compile Include="Assets\Scripts\Copter\Movement.cs" />
     <Compile Include="Assets\Scripts\DieOutsideCamera.cs" />
+    <Compile Include="Assets\Scripts\Ecplode.cs" />
     <Compile Include="Assets\Scripts\GameMasterScript.cs" />
     <Compile Include="Assets\Scripts\Helpers\CoroutineUtils.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
