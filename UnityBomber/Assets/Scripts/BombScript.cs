@@ -7,8 +7,10 @@ public class BombScript : MonoBehaviour
     /// <summary>сколько кубиков сносит бомба</summary>
     public int BlastForce;
 
-    public Score GameMastersScore;
+    public GameObject ExplosionPrefab;
 
+    public Score GameMastersScore;
+    
     void Start()
     {
         GameMastersScore = GameObject.FindWithTag("GameMaster").GetComponent<Score>();
@@ -17,11 +19,11 @@ public class BombScript : MonoBehaviour
     //Проверка столкновений
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
         //столкновение с землей
         if (collision.gameObject.tag == "Ground")
         {
             //удаляем бомбу
+            CreateExplosion(this.transform.position);
             this.gameObject.SetActive(false);
         }
 
@@ -75,6 +77,9 @@ public class BombScript : MonoBehaviour
 
                 GameObject o = Instantiate(houtetopdestr[Random.Range(0, houtetopdestr.Count - 1)], pos, Quaternion.identity);
                 o.transform.parent = house;
+
+                //Draw explosion
+                CreateExplosion(pos);
             }
        
             if(GameMastersScore != null)
@@ -83,10 +88,17 @@ public class BombScript : MonoBehaviour
 
             //удаляем бомбу
             this.gameObject.SetActive(false);
-
-
         }
+    }
 
-       
+
+    private void CreateExplosion(Vector3 ExpPlace)
+    {
+        if (ExplosionPrefab != null)
+        {
+            ExpPlace.z = -0.1f;
+            ExpPlace.x += 0.16f;
+            var expl = Instantiate(ExplosionPrefab, ExpPlace, Quaternion.identity);
+        }
     }
 }
