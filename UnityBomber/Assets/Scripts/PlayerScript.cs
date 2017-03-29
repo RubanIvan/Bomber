@@ -52,6 +52,7 @@ public class PlayerScript : MonoBehaviour
             if (BombaCurent.activeSelf == false && transform.position.x > -BorderPosition)
             {
                 BombaCurent.transform.position = this.transform.position;
+                BombaCurent.transform.position=new Vector3(BombaCurent.transform.position.x+0.2f, BombaCurent.transform.position.y - 0.7f);
                 BombaCurent.transform.rotation = Quaternion.identity;
                 BombaCurent.transform.Rotate(0, 0, Random.Range(-15, 15));
                 BombaCurent.SetActive(true);

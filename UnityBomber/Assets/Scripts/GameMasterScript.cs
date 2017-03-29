@@ -105,8 +105,8 @@ public class GameMasterScript : MonoBehaviour {
 
     void Awake()
     {
-        GameLevel.Add(new GameLevel() {MaxHeight = 15,MinHeight = 5,FinishPos = new Vector2(-100,100), StartPos = new Vector2(0,4)});
-        GameLevel.Add(new GameLevel() { MaxHeight = 10, MinHeight = 5, FinishPos = new Vector2(-100, 100), StartPos = new Vector2(0, 4) });
+        GameLevel.Add(new GameLevel() {MaxHeight = 10,MinHeight = 5,FinishPos = new Vector2(-100,100), StartPos = new Vector2(0,4)});
+        GameLevel.Add(new GameLevel() { MaxHeight = 12, MinHeight = 5, FinishPos = new Vector2(-100, 100), StartPos = new Vector2(0, 4) });
         GameLevel.Add(new GameLevel() { MaxHeight = 15, MinHeight = 10, FinishPos = new Vector2(-100, 100), StartPos = new Vector2(0, 4) });
 
         GameObject.FindWithTag("GameMaster").GetComponent<Score>().ResetScore();

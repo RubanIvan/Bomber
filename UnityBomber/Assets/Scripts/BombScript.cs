@@ -41,6 +41,7 @@ public class BombScript : MonoBehaviour
             {
                 //удаляем дом полностью
                 GameObject.Destroy(house.gameObject);
+                CreateExplosion(new Vector3(house.GetChild(0).transform.position.x, -3.26f));
             }
             else
             {   //необходимо удалить только часть дома
