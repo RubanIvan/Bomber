@@ -15,6 +15,8 @@ public class PlayerScript : MonoBehaviour
     private GameObject BombaCurent;
     private Vector3 pos;
 
+    public GameObject BomberBlast;
+
     /// <summary>Координаты конца экрана</summary>
     private float BorderPosition;
 
@@ -80,7 +82,10 @@ public class PlayerScript : MonoBehaviour
        //столкновение с землей
         if (collision.gameObject.tag == "HouseCub")
         {
-            SceneManager.LoadScene(0);
+            Instantiate(BomberBlast,new Vector3(transform.position.x+0.7f,transform.position.y-0.5f),Quaternion.identity);
+            Debug.Log(transform.position);
+            GameObject.Destroy(gameObject);
+            //SceneManager.LoadScene(0);
         }
 
     }

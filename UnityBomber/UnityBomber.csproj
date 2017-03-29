@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\Background\CloudEmmiter.cs" />
     <Compile Include="Assets\Scripts\Background\OffsetScroller.cs" />
     <Compile Include="Assets\Scripts\BombScript.cs" />
+    <Compile Include="Assets\Scripts\BomberBlastScript.cs" />
     <Compile Include="Assets\Scripts\CameraScript.cs" />
     <Compile Include="Assets\Scripts\DieOutsideCamera.cs" />
     <Compile Include="Assets\Scripts\Explosion.cs" />
